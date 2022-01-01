@@ -127,6 +127,7 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
+
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
     print("The most commonly used start station from the provided fitered data is: " + common_start_station)
@@ -141,6 +142,7 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
 
 
 def trip_duration_stats(df):
