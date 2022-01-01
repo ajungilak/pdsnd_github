@@ -4,7 +4,7 @@
 2021/01/01
 
 ### Project Title
-Training
+Version Control Project Submission
 
 ### Description
 This about a training to apply git commands properly
