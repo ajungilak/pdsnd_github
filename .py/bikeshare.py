@@ -55,7 +55,7 @@ def get_filters():
     return city, month, day
 
 
-def load_data(city, month, day):
+def load_Data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
     Args:
@@ -108,7 +108,7 @@ def time_stats(df):
 
     # TO DO: display the most common day of week
     common_day_of_week = df['day_of_week'].mode()[0]
-    print("The most common day of week from the given fitered data is: " + common_day_of_week)
+    print("The most common day of week from the provided fitered data is: " + common_day_of_week)
 
     # TO DO: display the most common start hour
     common_start_hour = df['hour'].mode()[0]
@@ -127,6 +127,7 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
+
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
     print("The most commonly used start station from the provided fitered data is: " + common_start_station)
@@ -141,6 +142,7 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
 
 
 def trip_duration_stats(df):
@@ -212,7 +214,7 @@ def display_raw_data(df):
 def main():
     while True:
         city, month, day = get_filters()
-        df = load_data(city, month, day)
+        df = load_Data(city, month, day)
 
         time_stats(df)
         station_stats(df)
